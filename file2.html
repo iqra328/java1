@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+                 <!-- a. Script in HEAD -->
+
+     <script>
+         function fromHead() {
+      alert("Alert from <head>"); }
+    </script>
+</head>
+
+<body>
+               
+               <!-- b. Script at START of BODY -->
+
+<script>
+    function fromBodyStart() {
+      alert("Alert from START of <body>");
+    }
+</script>
+ 
+  <h1>JavaScript Alert </h1>
+
+
+
+
+
+
+           <!-- c. Script IN BETWEEN content -->
+  <button onclick="fromHead()">Run Script from HEAD</button>
+  <button onclick="fromBodyStart()">Run Script from START of BODY</button>
+
+  <script>
+    function fromMiddle() {
+      alert("Alert from MIDDLE of HTML");
+    }
+  </script>
+
+  <button onclick="fromMiddle()">Run Script from MIDDLE</button>
+
+  <p>This is the rest of the page.</p>
+
+
+
+
+
+
+
+
+  <!-- d. Script at END of BODY -->
+  <script>
+    function fromBodyEnd() {
+      alert("Alert from END of <body>");
+    }
+  </script>
+
+  <button onclick="fromBodyEnd()">Run Script from END of BODY</button>
+
+
+
+
+
+
+    
+</body>
+</html>
